@@ -6,7 +6,7 @@ Problema:
 
     Oscar tiene una cadena de N dígitos y quiere saber:
     ¿De cuantas formas puede Oscar separar su cadena en 4 partes no-vacías 
-    para poder escribirla como si fuera una dirección IP? Imprímelas.
+    para poder escribirla como si fuera una dirección IPv4? Imprímelas.
     
     En palabras simples: Genera todas las formas distintas de insertar 3 puntos en
     en una cadena, tal que no haya 2 puntos juntos, y junto a cada punto hayan digitos
