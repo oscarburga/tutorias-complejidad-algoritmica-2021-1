@@ -22,17 +22,18 @@ Problema:
 
 # [ 1, 2, 3, 4, . , 5, . , 6, . , 7 ]
 
-def fuerzabruta(s) -> list:
+def fuerzabruta(s) -> list: # Complejidad total O(N^4).
     n = len(s)
     if n < 4: return []
     ans = []
     # Asumimos que si ponemos un punto en la posición 'i'
     # en verdad lo estamos colocando entre las posiciones 'i' e 'i+1'
-    for i in range(n-3):
-        for j in range(i+1, n-2):
-            for k in range(j+1, n-1):
+    for i in range(n-3): #O(N)
+        for j in range(i+1, n-2): #O(N)
+            for k in range(j+1, n-1): #O(N)
                 # s[L:R] retorna el segmento en S de la posición L hasta R-1 
-                t = '.'.join( [ \
+                # O(N)
+                t = '.'.join( [ \ 
                     s[0 : i+1], \
                     s[i+1 : j+1], \
                     s[j+1 : k+1], \
@@ -67,7 +68,7 @@ def backtracking(s) -> list: # esto es solo para meter todo y que este ordenado
 
         if i == n - 1: # estoy en el final de la cadena
             # si he puesto 3 puntos, agrego esta cadena a mi respuesta
-            if cnt == 3: ans.append( ''.join(cur) )     
+            if cnt == 3: ans.append( ''.join(cur) )     # Esta operacion es O(N)
             # si no he puesto 3 puntos, no tengo que hacer nada
             # porque no tengo una cadena valida
             cur.pop(-1)
@@ -78,16 +79,17 @@ def backtracking(s) -> list: # esto es solo para meter todo y que este ordenado
         bt(i+1, cnt)
 
         # opcion 2: poner punto y avanzar a la siguiente pos
-        if cnt < 3: # O(N^3)
+        if cnt < 3: # O(N^3) estados
             #si no pongo este if, es O(2^(N-1))
             cur.append('.') # agrego un punto luego del i-ésimo dígito
             bt(i+1, cnt+1)
             cur.pop(-1)
 
-        # ya termine ocn todo: debo quitar mi digito tambien
+        # ya termine con todo: debo quitar mi digito tambien
         cur.pop(-1)
 
     bt(0, 0)
+    # Complejidad total O(N^4)
     return ans
 
 
