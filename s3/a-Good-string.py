@@ -2,7 +2,9 @@
 Link al problema: https://codeforces.com/contest/1385/problem/D
 Resumen del problema:
 
-Una cadena S[0..n] se define como C-good si se cumple al menos una de las siguientes condiciones:
+C-good -> 'C' puede ser cualquier letra, no es la letra C
+
+Una cadena S[0..n] se define como 'C'-good si se cumple al menos una de las siguientes condiciones: 
 	* La longitud de S es igual a 1, y su único caracter es la letra C
 	* La longitud de S es mayor a 1, la primera mitad de S consiste únicamente de la letra
 		C y la segunda mitad es una cadena (C+1)-good.
@@ -13,6 +15,21 @@ Se te pide determinar la mínima cantidad de letras que debes reemplazar para co
 en una cadena a-good.
 
 Para algunos ejemplos y el enunciadoo completo, ver el link del problema.
+
+---- 
+
+a-good string:
+bbdcaaaa -> segunda mitad son todas 'a', primera mitad debe ser 'a'+1-good string -> 'b'-good string
+
+b-good string:
+bbdc -> primera mitad son todas 'b', segunda mitad es 'c'-good string
+
+c-good string:
+dc -> segunda mitad son todas 'c', la primera mitad debe ser un 'd'-good string
+
+d-good string:
+d -> longitud = 1, letra = d -> es un 'd'-good string
+
 '''
 
 infinity = 10**9
@@ -26,10 +43,8 @@ def test_case():
 	s = list(s)
 
 	def solve(l : int = 0, r : int = n-1, f : str = 'a'):
-		if ord(f) > ord('z'):
-			return infinity
-		if l == r:
-			return int(s[l] != f)
+		if ord(f) > ord('z'): return infinity
+		if l == r: return int(s[l] != f)
 		mid = (l+r)//2
 		### Primera opción: volver la primera mitad toda igual a f, y la segunda mitad (f+1)-good
 		costL = 0
