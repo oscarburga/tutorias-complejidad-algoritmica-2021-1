@@ -1,0 +1,14 @@
+GPC UPC - Clase 23 - Estructuras de Datos 1 - Ver Disjoint Set Union
+https://nbviewer.jupyter.org/github/racsosabe/Miscelanea/blob/master/UPC/Clase%2023%20-%20Estructuras%20de%20Datos%20I.ipynb
+
+Disjoint Set Union - CP Algorithms
+https://cp-algorithms.com/data_structures/disjoint_set_union.html
+
+Disjoint Sets Union - Codeforces EDU (necesitan registrar una cuenta)
+https://codeforces.com/edu/course/2/lesson/7
+
+Disjoint Sets - Pavel Mavrin 
+https://www.youtube.com/watch?v=vq5u09x2Kzo
+
+Time Complexity of Union-Find (inverse Ackermann function) - Pavel Mavrin
+https://youtu.be/ahz0HvV_QYU
