@@ -1,0 +1,8 @@
+Problemas de practica:
+
+Sección de programación dinámica de CSES
+https://cses.fi/problemset/
+
+Sección de programación dinámica de Uhunt 
+https://uhunt.onlinejudge.org
+
