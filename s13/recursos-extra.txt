@@ -1,0 +1,12 @@
+En el taller les mostré algunos notebooks que explicaban algoritmos y propiedades
+de caminos más cortos. Aquí estan los enlaces correspondientes.
+
+Shortest paths 1: nbviewer.jupyter.org/github/racsosabe/Miscelanea/blob/master/UPC/Clase%2014%20-%20Grafos%20V.ipynb
+
+Shortest paths 2: nbviewer.jupyter.org/github/racsosabe/Miscelanea/blob/master/UPC/Clase%2015%20-%20Grafos%20VI.ipynb
+
+Demostración de las propiedades: nbviewer.jupyter.org/github/racsosabe/Miscelanea/blob/master/UPC/Clase%2016%20-%20Grafos%20VII.ipynb
+
+Otra aplicación interesante de Bellman-Ford: nbviewer.jupyter.org/github/racsosabe/Miscelanea/blob/master/UPC/Clase%2019%20-%20Grafos%20VIII.ipynb
+
+All-Pairs-Shortest-Paths: nbviewer.jupyter.org/github/racsosabe/Miscelanea/blob/master/UPC/Clase%2021%20-%20Grafos%20IX.ipynb
